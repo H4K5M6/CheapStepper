@@ -171,7 +171,7 @@ void CheapStepper::off() {
 
 int CheapStepper::calcDelay (int rpm){
 
-	if (rpm < 6) return delay; // will overheat, no change
+	if (rpm < 1) return delay; // will overheat, no change
 	else if (rpm >= 24) return 600; // highest speed
 
 	unsigned long d = 60000000 / (totalSteps* (unsigned long) rpm);

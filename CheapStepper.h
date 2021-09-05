@@ -87,6 +87,7 @@ public:
 	void stepCCW () { step (false); } // move 1 step counter-clockwise
 
 	int getStep() { return stepN; } // returns current miniStep position
+	void setStep (int step) {stepN = step;}
 	int getDelay() { return delay; } // returns current delay (microseconds)
 	int getRpm() { return calcRpm(); } // returns current rpm
 	int getPin(int p) { 
